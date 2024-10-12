@@ -2,8 +2,10 @@
   "devDependencies": {
     "tailwindcss": "^3.4.13"
   },
-
   "scripts": {
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "swiper": "^11.1.14"
   }
 }

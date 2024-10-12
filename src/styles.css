@@ -1,0 +1,54 @@
+/* General link transition settings */
+a {
+    transition: all 300ms linear;
+  }
+  
+  /* Button styles */
+  .button {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    overflow: hidden;
+    border-width: 1px;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  
+  .button::after {
+    position: absolute;
+    inset: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transform-origin: top right;
+    --tw-scale-y: 0;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    content: var(--tw-content);
+    transition-duration: 300ms;
+  }
+  
+  .button:hover::after {
+    content: var(--tw-content);
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  
+  /* Submenu styles */
+  .sub-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px); /* For a smooth animation */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .sub-menu.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
