@@ -40,6 +40,64 @@ document.addEventListener('DOMContentLoaded', () => {
         );
       }
     }
+
+    // Utilities submenu functionality
+  const utilitiesMenuItem = document.getElementById('utilities-menu-item');
+  const utilitiesSubmenu = document.getElementById('utilities-submenu');
+  let isUtilitiesSubmenuOpen = false;
+
+  function toggleUtilitiesSubmenu(event) {
+    event.stopPropagation(); // Prevent the event from bubbling up to parent elements
+    isUtilitiesSubmenuOpen = !isUtilitiesSubmenuOpen;
+    utilitiesSubmenu.classList.toggle('hidden', !isUtilitiesSubmenuOpen);
+
+    // Position the submenu
+    if (isUtilitiesSubmenuOpen) {
+      const rect = utilitiesMenuItem.getBoundingClientRect();
+      utilitiesSubmenu.style.top = `${rect.top}px`;
+      utilitiesSubmenu.style.left = `${rect.right}px`;
+    }
+  }
+
+  utilitiesMenuItem.addEventListener('click', toggleUtilitiesSubmenu);
+
+  // Close utilities submenu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (isUtilitiesSubmenuOpen && !utilitiesSubmenu.contains(event.target) && !utilitiesMenuItem.contains(event.target)) {
+      isUtilitiesSubmenuOpen = false;
+      utilitiesSubmenu.classList.add('hidden');
+    }
+  });
+
+  // Modify the existing toggleDropdown function to handle the utilities submenu
+  function toggleDropdown(index) {
+    const isExpanded = dropdownButtons[index].getAttribute('aria-expanded') === 'true';
+    
+    // Close all dropdowns
+    dropdownButtons.forEach((button, i) => {
+      button.setAttribute('aria-expanded', 'false');
+      dropdowns[i].classList.add('hidden');
+    });
+
+    // Close utilities submenu
+    isUtilitiesSubmenuOpen = false;
+    utilitiesSubmenu.classList.add('hidden');
+
+    // Open the clicked dropdown
+    if (!isExpanded) {
+      dropdownButtons[index].setAttribute('aria-expanded', 'true');
+      dropdowns[index].classList.remove('hidden');
+      
+      // Animation for opening the dropdown
+      dropdowns[index].animate(
+        [
+          { opacity: 0, transform: 'translateY(1px)' },
+          { opacity: 1, transform: 'translateY(0)' }
+        ],
+        { duration: 200, easing: 'ease-out', fill: 'forwards' }
+      );
+    }
+  }
   
     serviceButtons.forEach((button, index) => {
       button.addEventListener('click', () => toggleServiceDropdown(index));
