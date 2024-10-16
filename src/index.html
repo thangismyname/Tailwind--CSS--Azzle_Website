@@ -48,7 +48,7 @@
                 Service
                 <i class="fa-solid fa-chevron-down text-sm text-gray-500"></i>
               </button>
-              <div class=" hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <div class=" hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div class="p-4">
                   <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -83,7 +83,7 @@
                 Pages
                 <i class="fa-solid fa-chevron-down text-sm text-gray-500"></i>
               </button>
-              <div class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <div class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div class="p-4">
                   <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -169,7 +169,7 @@
               </div>
               
               <!-- Utilities submenu -->
-              <div id="utilities-submenu" class="hidden absolute -right-[calc(100%-16px)] top-0 z-20 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <div id="utilities-submenu" class="hidden absolute -left-8 -right-[calc(100%-16px)] top-0 z-20 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div class="p-4">
                   <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
                     <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -181,30 +181,6 @@
                         <span class="absolute inset-0"></span>
                       </a>
                       <p class="mt-1 text-gray-600">Handle errors gracefully</p>
-                    </div>
-                  </div>
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-sign-in-alt group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="/login" class="block font-semibold text-gray-900">
-                        Login
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Secure user authentication</p>
-                    </div>
-                  </div>
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-user-plus group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="/signup" class="block font-semibold text-gray-900">
-                        Signup
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Create new user accounts</p>
                     </div>
                   </div>
                   <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
@@ -250,30 +226,51 @@
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">About</a>
                   <div class="-mx-3">
-                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-                      About
+                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="true">
+                      Service
                       <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                         <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                       </svg>
                     </button>
-                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                    <div class="mt-2 space-y-2" id="disclosure-1">
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Integrations</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Automations</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch demo</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact sales</a>
+                    <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Service Categories</a>
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Service Details</a>
                     </div>
                   </div>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                  <div class="-mx-3">
+                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50" aria-controls="disclosure-2" aria-expanded="true">
+                      Pages
+                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <div class="mt-2 space-y-2 hidden" id="disclosure-2">
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Blogs</a>
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Teams</a>
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">FAQ</a>
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Portfolio</a>
+                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Pricing</a>
+                      <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50" aria-controls="sub-disclosure-1" aria-expanded="true">
+                        Utilities
+                        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                      <div class="mt-2 space-y-2 hidden" id="sub-disclosure-1">
+                        <a href="#" class="block rounded-lg py-2 pl-10 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Error 404</a>
+                        <a href="#" class="block rounded-lg py-2 pl-10 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Reset Password</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Contact</a>
+                </div>
+                <hr class="bg-orange-600">
                 </div>
                 <div class="py-6">
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Log in</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Sign up</a>
                 </div>
               </div>
             </div>
@@ -315,8 +312,6 @@
                 ></a>
                 <ul class="mobile-sub-menu">
                   <li><a href="/error-404">Error 404</a></li>
-                  <li><a href="/login">Login</a></li>
-                  <li><a href="/signup">Signup</a></li>
                   <li><a href="/reset-password">Reset Password</a></li>
                 </ul>
               </li>
