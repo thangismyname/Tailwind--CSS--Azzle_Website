@@ -24,7 +24,7 @@
 
   <body>
     <div class="page-wrapper relative z-[1] bg-white">
-      <header class="bg-white">
+      <header class="site-header site-header--absolute py-3 bg-white" id="sticky-menu">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
@@ -207,7 +207,7 @@
           
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true">
+        <div class="lg:hidden hidden" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-10"></div>
           <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -275,53 +275,98 @@
               </div>
             </div>
           </div>
-        </div>
+        
       </header>
+    
+      <div class="main-wrapper relative overflow-hidden">
+        <!-- Hero Section -->
+         <section id="section-hero">
+          <!-- Section Space -->
+           <div class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-[#EFEAE3] pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
+            <!-- Section Container -->
+            <div class="container">
+              <!-- Hero Content -->
+               <div class="mb-14 flex flex-col items-center text-center lg:mb-20">
+                <h1 class="slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]">
+                  Simplify your SaaS solution with AI
+                </h1>
+                <p class="slide-from-bottom mb-11 max-w-[70px] text-lg font-semibold sm:text-xl xl:max-w-[980px] ">
+                  Our AI SAAS tool is a cloud-based software delivery model. It
+                  helps businesses forecast demand for products and services and
+                  optimize inventory management and supply chain operations.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                  <a href="#" class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white">
+                    Get Started
+                  </a>
+                  <a href="#" class="button rounded-[50px] border-2 border-black bg-transparent py-4 text-black after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white">
+                    Learn More
+                  </a>
+                </div>
+               </div>
 
-      <div id="mobile-menu" class="mobile-menu-navigator">
-        <button
-          id="close-mobile-menu"
-          class="absolute top-4 right-4 text-white"
-        >
-          <i class="fa-solid fa-times"></i>
-        </button>
-        <ul class="mobile-menu-list">
-          <li class="border-white"><a href="/about">About</a></li>
-          <li class="nav-item-has-children">
-            <a href="#" class="dropdown-trigger"
-              >Service <i class="fa-solid fa-angle-down dropdown-icon"></i
-            ></a>
-            <ul class="mobile-sub-menu">
-              <li><a href="/service-categories">Service Categories</a></li>
-              <li><a href="/service-detail">Service Detail</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-has-children">
-            <a href="#" class="dropdown-trigger"
-              >Pages <i class="fa-solid fa-angle-down dropdown-icon"></i
-            ></a>
-            <ul class="mobile-sub-menu">
-              <li><a href="/blogs">Blogs</a></li>
-              <li><a href="/team">Team</a></li>
-              <li><a href="/faq">FAQ</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/pricing">Pricing</a></li>
-              <li class="nav-item-has-children">
-                <a href="#" class="dropdown-trigger"
-                  >Utilities <i class="fa-solid fa-angle-down dropdown-icon"></i
-                ></a>
-                <ul class="mobile-sub-menu">
-                  <li><a href="/error-404">Error 404</a></li>
-                  <li><a href="/reset-password">Reset Password</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+                <!-- Hero Image -->
+                <div class="hero-img overflow-hidden rounded-2xl bg-black">
+                  <img src="../assets/images/hero-dashboard.jpg" alt="hero-dashboard" width="1296" height="640" class="h-auto w-full"/>
+                </div>
+                <hr class=" my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20 ">
+                <div class="mx-auto mb-12 max-w-[715px] text-center lg:mb-16 ">
+                  <p class="text-lg">
+                    Companies of all sizes trust us to find AI SaaS critical to
+                    their growth and innovation
+                  </p>
+                </div>
+                <!-- Slider Container -->
+                 <div class="swiper brand-slider jos swiper-initialized swiper-horizontal swiper-backface-hidden">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="w-full relative">
+                        <div class="swiper centered-slide-carousel swiper-container relative ">
+                        <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                             <span class="text-3xl font-semibold text-indigo-600">Slide 1 </span>
+                           </div>
+                         </div>
+                         <div class="swiper-slide">
+                           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                             <span class="text-3xl font-semibold text-indigo-600">Slide 2 </span>
+                           </div>
+                         </div>
+                         <div class="swiper-slide">
+                           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                             <span class="text-3xl font-semibold text-indigo-600">Slide 3 </span>
+                           </div>
+                         </div>
+                         <div class="swiper-slide">
+                           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                             <span class="text-3xl font-semibold text-indigo-600">Slide 4 </span>
+                           </div>
+                         </div>
+                         <div class="swiper-slide">
+                           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                             <span class="text-3xl font-semibold text-indigo-600">Slide 5 </span>
+                           </div>
+                         </div>
+                         <div class="swiper-slide">
+                           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                             <span class="text-3xl font-semibold text-indigo-600">Slide 6 </span>
+                           </div>
+                         </div>
+                        </div>
+                        <div class="swiper-pagination "></div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+
+            </div>
+           </div>
+
+         </section>
       </div>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>
