@@ -1,72 +1,76 @@
 /* General link transition settings */
 a {
-    transition: all 300ms ease;
-  }
-  
-  /* Button styles */
-  .button {
-    position: relative;
-    z-index: 1;
-    display: inline-flex;
-    overflow: hidden;
-    border-width: 1px;
-    padding: 10px 25px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
-  }
-  
-  .button::after {
-    position: absolute;
-    inset: 0px;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    transform-origin: top right;
-    --tw-scale-y: 0;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    content: var(--tw-content);
-    transition-duration: 300ms;
-  }
-  
-  .button:hover::after {
-    content: var(--tw-content);
-    --tw-scale-y: 1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-  
-  /* Submenu styles */
-  .sub-menu {
-    display: none;
-    opacity: 0;
-    transform: translateY(20px); /* For a smooth animation */
-    transition: opacity 0.4s ease, transform 0.4s ease;
-  }
-  
-  .sub-menu.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-  }
+  transition: all 300ms ease;
+}
 
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1332px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+/* Button styles */
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  overflow: hidden;
+  border-width: 1px;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.button::after {
+  position: absolute;
+  inset: 0px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transform-origin: top right;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+
+.button:hover::after {
+  content: var(--tw-content);
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/* Submenu styles */
+.sub-menu {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px); /* For a smooth animation */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.sub-menu.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1332px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: DM Sans, sans-serif;
   font-weight: 700;
   line-height: 1;
@@ -123,18 +127,62 @@ section {
   unicode-bidi: isolate;
 }
 
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
 
 .swiper-wrapper {
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
   width: 100%;
-  height: max-content !important;
-  padding-bottom: 64px !important;
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
+  height: 100%;
   position: relative;
-  }
-  .swiper-pagination-bullet {
-  background: #4F46E5;
-  }
-  .swiper-pagination-bullet-active {
-  background: #4F46E5 !important;
-  }
+  transition-property: transform;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.2;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #FE330A;
+}
+
+.swiper-logo {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.gradient {
+  filter: blur(55px);
+}
+
+.bg-orange-1 {
+  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+}
+
+.bg-orange-2 {
+  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+}
