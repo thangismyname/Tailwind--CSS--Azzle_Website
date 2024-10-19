@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,252 +26,661 @@
   <body>
     <div class="page-wrapper relative z-[1] bg-white">
       <header class="bg-white">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Azzle</span>
-              <img class=" w-auto" src="../assets/images/logo-dark.png" alt="">
+              <img class="w-auto" src="../assets/images/logo-dark.png" alt="" />
             </a>
           </div>
           <div class="flex lg:hidden">
-            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
               <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <a href="/about" class="text-base font-semibold leading-6 text-gray-900">About</a>
+            <a
+              href="/about"
+              class="text-base font-semibold leading-6 text-gray-900"
+              >About</a
+            >
 
             <div class="relative">
-              <button type="button" class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900" aria-expanded="false">
+              <button
+                type="button"
+                class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+                aria-expanded="false"
+              >
                 Service
-                <i class="fa-solid fa-chevron-down text-sm text-gray-500"></i>
+                <svg
+                  class="h-5 w-5 flex-none text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </button>
-              <div class=" hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <div
+                class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              >
                 <div class="p-4">
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-layer-group group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Service Categories
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-circle-info group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Service Details
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="relative">
-              <button type="button" class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900" aria-expanded="false">
-                Pages
-                <i class="fa-solid fa-chevron-down text-sm text-gray-500"></i>
-              </button>
-              <div class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div class="p-4">
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-blog group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Blogs
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-user-plus group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Teams
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-question group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        FAQ
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-file group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Portfolio
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-barcode group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Pricing
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
-                    </div>
-                  </div>
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50" id="utilities-menu-item">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-gear group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
-                        Utilities
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Enhance your workflow with powerful tools</p>
-                    </div>
-                    <div>
-                      <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        />
                       </svg>
                     </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Analytics
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Get a better understanding of your traffic
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Engagement
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Speak directly to your customers
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Security
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Your customers’ data will be safe and secure
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Integrations
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Connect with third-party tools
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Automations
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <!-- Utilities submenu -->
-              <div id="utilities-submenu" class="hidden absolute -left-8 -right-[calc(100%-16px)] top-0 z-20 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div class="p-4">
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-exclamation-triangle group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="/error-404" class="block font-semibold text-gray-900">
-                        Error 404
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Handle errors gracefully</p>
-                    </div>
-                  </div>
-                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50">
-                    <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <i class="fa-solid fa-key group-hover:text-orange-600"></i>
-                    </div>
-                    <div class="flex-auto">
-                      <a href="/reset-password" class="block font-semibold text-gray-900">
-                        Reset Password
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-600">Recover user accounts</p>
-                    </div>
-                  </div>
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <svg
+                      class="h-5 w-5 flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Watch demo
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <svg
+                      class="h-5 w-5 flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Contact sales
+                  </a>
                 </div>
               </div>
             </div>
-            <a href="/contact" class="text-base font-semibold leading-6 text-gray-900">Contact</a>
+
+            <div class="relative">
+              <button
+                type="button"
+                class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+                aria-expanded="false"
+              >
+                Pages
+                <svg
+                  class="h-5 w-5 flex-none text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Analytics
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Get a better understanding of your traffic
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Engagement
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Speak directly to your customers
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Security
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Your customers’ data will be safe and secure
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Integrations
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Connect with third-party tools
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <svg
+                        class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                        />
+                      </svg>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Automations
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <svg
+                      class="h-5 w-5 flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Watch demo
+                  </a>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center gap-x-2.5 p-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                  >
+                    <svg
+                      class="h-5 w-5 flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Contact sales
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="/contact"
+              class="text-base font-semibold leading-6 text-gray-900"
+              >Contact</a
+            >
           </div>
-          <div class=" gap-5 hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="button border-[#7F8995] bg-transparent after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white rounded-[50px] text-base font-semibold leading-6 text-gray-900">Log in</a>
-            <a href="#" class="button border-[#7F8995] bg-black after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white rounded-[50px] text-base font-semibold leading-6 text-white">Sign up</a>
+          <div class="gap-5 hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="#"
+              class="button border-[#7F8995] bg-transparent after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white rounded-[50px] text-base font-semibold leading-6 text-gray-900"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="button border-[#000000] bg-[#000000] bg-transparent after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white rounded-[50px] text-base font-semibold leading-6 text-white"
+              >Sign up</a
+            >
           </div>
-          
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div class="lg:hidden" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-10"></div>
-          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div
+            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class=" w-auto" src="../assets/images/logo-dark.png" alt="">
+                <img
+                  class="w-auto"
+                  src="../assets/images/logo-dark.png"
+                  alt=""
+                />
               </a>
-              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
                 <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </div>
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
                 <div class="space-y-2 py-6">
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">About</a>
                   <div class="-mx-3">
-                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="true">
-                      Service
-                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      aria-controls="disclosure-1"
+                      aria-expanded="false"
+                    >
+                      About
+                      <svg
+                        class="h-5 w-5 flex-none"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clip-rule="evenodd"
+                        />
                       </svg>
                     </button>
-                    <div class="mt-2 space-y-2 hidden" id="disclosure-1">
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Service Categories</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Service Details</a>
+                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                    <div class="mt-2 space-y-2" id="disclosure-1">
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Engagement</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Analytics</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Security</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Integrations</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Automations</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Watch demo</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        >Contact sales</a
+                      >
                     </div>
                   </div>
-                  <div class="-mx-3">
-                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50" aria-controls="disclosure-2" aria-expanded="true">
-                      Pages
-                      <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                      </svg>
-                    </button>
-                    <div class="mt-2 space-y-2 hidden" id="disclosure-2">
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Blogs</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Teams</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">FAQ</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Portfolio</a>
-                      <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Pricing</a>
-                      <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50" aria-controls="sub-disclosure-1" aria-expanded="true">
-                        Utilities
-                        <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg>
-                      </button>
-                      <div class="mt-2 space-y-2 hidden" id="sub-disclosure-1">
-                        <a href="#" class="block rounded-lg py-2 pl-10 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Error 404</a>
-                        <a href="#" class="block rounded-lg py-2 pl-10 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Reset Password</a>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Contact</a>
-                </div>
-                <hr class="bg-orange-600">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Features</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Marketplace</a
+                  >
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Company</a
+                  >
                 </div>
                 <div class="py-6">
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Log in</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50">Sign up</a>
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >Log in</a
+                  >
                 </div>
               </div>
             </div>
@@ -312,6 +722,8 @@
                 ></a>
                 <ul class="mobile-sub-menu">
                   <li><a href="/error-404">Error 404</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/signup">Signup</a></li>
                   <li><a href="/reset-password">Reset Password</a></li>
                 </ul>
               </li>
@@ -321,6 +733,147 @@
         </ul>
       </div>
     </div>
+
+    <main class="main-wrapper relative overflow-hidden">
+      <!-- Hero Section -->
+      <section id="section-hero" class="pb-20 pt-28 lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
+          <div class="global-container">
+              <div class="flex flex-col items-center text-center mb-14 lg:mb-20">
+                  <h1 class="mb-6">Simplify your SaaS solution with AI</h1>
+                  <p class="max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px] mb-11">
+                      Our AI SaaS tool helps businesses forecast demand for products and optimize inventory management.
+                  </p>
+                  <div class="flex flex-wrap justify-center gap-6">
+                      <a href="#" class="button rounded-[50px] bg-black text-white">Get started for free</a>
+                      <a href="#" class="button rounded-[50px] bg-transparent text-black">Learn more</a>
+                  </div>
+              </div>
+
+              <!-- Hero Image -->
+              <div class="jos hero-img overflow-hidden rounded-2xl bg-black">
+                  <img src="../assets/images/hero-dashboard.jpg" alt="hero-dashboard" width="1296" height="640" class="w-full h-auto" />
+              </div>
+
+              <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16"></div>
+          </div>
+
+          <!-- Brand Slider -->
+          <div class="swiper brand-slider">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../assets/images/brand-1.png" alt="brand-1" /></div>
+                  <div class="swiper-slide"><img src="../assets/images/brand-2.png" alt="brand-2" /></div>
+                  <div class="swiper-slide"><img src="../assets/images/brand-3.png" alt="brand-3" /></div>
+                  <!-- Additional brand slides as needed -->
+              </div>
+          </div>
+      </section>
+
+      <!-- Content Sections -->
+      <section id="content-section-1" class="pb-20 xl:pb-[150px]">
+          <div class="global-container grid grid-cols-1 gap-12 md:grid-cols-2">
+              <!-- Content Left Block -->
+              <div class="jos order-2 overflow-hidden rounded-md md:order-1">
+                  <img src="../assets/images/content-image-1.jpg" alt="content-image-1" width="526" height="450" class="h-auto w-full" />
+              </div>
+              
+              <!-- Content Right Block -->
+              <div class="jos order-1 md:order-2">
+                  <h2>Accessible to a wider audience</h2>
+                  <p class="text-lg leading-[1.4] lg:text-[21px]">Advanced AI capabilities for small & medium-sized businesses and individuals who may lack the resources to develop AI solutions.</p>
+              </div>
+          </div>
+      </section>
+
+      <section id="content-section-2" class="pb-20 xl:pb-[150px]">
+          <div class="global-container grid grid-cols-1 gap-12 md:grid-cols-2">
+              <!-- Content Left Block -->
+              <div class="jos order-2 overflow-hidden rounded-md">
+                  <img src="../assets/images/content-image-2.jpg" alt="content-image-2" width="526" height="450" class="h-auto w-full" />
+              </div>
+
+              <!-- Content Right Block -->
+              <div class="jos order-1">
+                  <h2>Providing quick deploy solutions</h2>
+                  <p class="text-lg leading-[1.4] lg:text-[21px]">Our AI SaaS solutions can be quickly deployed, enabling users to start benefiting from AI capabilities without lengthy setup times.</p>
+                  <ul class="flex flex-col gap-y-5 text-black">
+                      <li><img src="../assets/images/check-circle.svg" alt="check" /> Ready-to-use AI capabilities</li>
+                      <li><img src="../assets/images/check-circle.svg" alt="check" /> Quick integration of AI features</li>
+                      <li><img src="../assets/images/check-circle.svg" alt="check" /> Time and cost savings</li>
+                  </ul>
+              </div>
+          </div>
+  </section>
+
+
+<!-- Footer Section -->
+<footer class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+  <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+      <div class="overflow-hidden">
+          <!-- Footer Text Slider -->
+          <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+              <!-- Repeated Footer Slide Item -->
+              <img src="../assets/images/footer-text-slider-icon.svg" alt="footer-text-slider-icon" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+              <div class="text-4xl font-bold leading-none text-black lg:text-6xl">Start building software</div>
+              <!-- Repeat similar items as needed -->
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer Content -->
+  <div class="global-container">
+      <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+      <div class="grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20">
+          <div>
+              <a href='/'><img src="../assets/images/logo-dark.png" alt="logo" /></a>
+              <p>Our mission is to harness AI to solve business challenges and enhance user experiences.</p>
+              <p>Website: <a href="https://www.example.com">www.example.com</a></p>
+          </div>
+
+          <!-- Primary Pages -->
+          <div>
+              <h4 class="text-[21px] font-semibold">Primary Pages</h4>
+              <ul class="flex flex-col gap-y-[10px]">
+                  <li><a href='/'>Home</a></li>
+                  <li><a href='/about'>About Us</a></li>
+                  <li><a href='/services'>Services</a></li>
+                  <li><a href='/pricing'>Pricing</a></li>
+                  <li><a href='/contact'>Contact</a></li>
+              </ul>
+          </div>
+
+          <!-- Utility Pages -->
+          <div>
+              <h4 class="text-[21px] font-semibold">Utility Pages</h4>
+              <ul class="flex flex-col gap-y-[10px]">
+                  <li><a href='/signup'>Signup</a></li>
+                  <li><a href='/login'>Login</a></li>
+                  <li><a href='/error-404'>404 Not Found</a></li>
+                  <li><a href='/reset-password'>Password Reset</a></li>
+              </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+              <h4 class="text-[21px] font-semibold">Subscribe to our newsletter</h4>
+              <form class="relative h-[50px] max-w-[300px]">
+                  <input type="email" name="newsletter-email" placeholder="Enter your email" class="h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20" required />
+                  <button type="submit" class="absolute right-[5px] top-[50%] h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 hover:bg-orange-500">
+                      <img src="../assets/images/arrow-right-black.svg" alt="newsletter" />
+                  </button>
+              </form>
+          </div>
+      </div>
+
+      <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+      <div class="py-9 text-center">&copy; 2023, All Rights Reserved by Mthemeus</div>
+  </div>
+
+  <!-- Footer Background Shapes -->
+  <div class="orange-gradient-2 absolute -top-[290px] right-[90px] h-[406px] w-[406px] -rotate-[58deg]"></div>
+  <div class="orange-gradient-1 absolute -right-[200px] -top-[205px] h-[451px] w-[451px] -rotate-[58deg]"></div>
+</footer>
+</main>
+</div>
 
     <script src="index.js"></script>
   </body>
