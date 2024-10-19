@@ -3,6 +3,22 @@ a {
   transition: all 300ms ease;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.animation {
+  transition: 0.7s 0.5s;
+}
+
 /* Button styles */
 .button {
   position: relative;
@@ -43,19 +59,6 @@ a {
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-/* Submenu styles */
-.sub-menu {
-  display: none;
-  opacity: 0;
-  transform: translateY(20px); /* For a smooth animation */
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.sub-menu.active {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .container {
   margin-left: auto;
@@ -110,79 +113,34 @@ h1 {
   }
 }
 
-.site-header--absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
 
-.site-header {
-  background-color: transparent;
-}
 
 section {
   display: block;
   unicode-bidi: isolate;
 }
 
-.swiper-container {
-  width: 100%;
-  overflow: hidden;
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
-.swiper-wrapper {
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
+@media (min-width: 992px) {
+  h2 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
-.swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition-property: transform;
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
-.swiper-pagination {
-  position: absolute;
-  text-align: center;
-  bottom: 10px;
-  transition: 300ms opacity;
-  transform: translate3d(0, 0, 0);
-  z-index: 10;
-}
-
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 50%;
-  background: #000;
-  opacity: 0.2;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #FE330A;
-}
-
-.swiper-logo {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.gradient {
-  filter: blur(55px);
-}
-
-.bg-orange-1 {
-  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
-}
-
-.bg-orange-2 {
-  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+@media (min-width: 1400px) {
+  h2 {
+    font-size: 80px;
+  }
 }
