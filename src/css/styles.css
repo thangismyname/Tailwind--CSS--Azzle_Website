@@ -531,3 +531,8 @@ h4 {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+
+[data-module="countup"] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
