@@ -3,6 +3,16 @@ a {
   transition: all 300ms ease;
 }
 
+body {
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1.66;
+  --tw-text-opacity: 1;
+  color: rgb(25 25 25 / var(--tw-text-opacity));
+}
+
 /* Button styles */
 .button {
   position: relative;
@@ -185,4 +195,23 @@ section {
 
 .bg-orange-2 {
   background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+}
+
+h4 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  line-height: 1.33;
+  letter-spacing: 0em;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
