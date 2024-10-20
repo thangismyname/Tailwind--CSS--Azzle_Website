@@ -1,0 +1,23 @@
+.footer-text-slider {
+    animation: horizontal-slide-from-right-to-left 10s linear infinite normal forwards;
+  }
+
+  @keyframes horizontal-slide-from-right-to-left {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes horizontal-slide-from-left-to-right {
+    from {
+      transform: translateX(-50%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
