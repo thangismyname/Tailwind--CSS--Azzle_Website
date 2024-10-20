@@ -78,6 +78,14 @@ body {
   padding-right: 1rem;
 }
 
+.xxl\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.xxl\:grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .font-DM-Sans {
   font-family: DM Sans, sans-serif;
 }
@@ -126,6 +134,8 @@ h1 {
     font-size: 120px;
   }
 }
+
+
 
 @keyframes fadeInDown {
   0% {
@@ -530,6 +540,69 @@ h4 {
 .animation {
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+/* Flip (and Flip Right) */
+@keyframes flip {
+  0% {
+    transform: perspective(2500px) rotateY(-100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(2500px) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flipLeft {
+  0% {
+    transform: perspective(2500px) rotateY(100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(2500px) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flipUp {
+  0% {
+    transform: perspective(2500px) rotateX(-100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(2500px) rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flipDown {
+  0% {
+    transform: perspective(2500px) rotateX(100deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(2500px) rotateX(0);
+    opacity: 1;
+  }
+}
+
+/* Updated classes to use the animations */
+.flip,
+.flip-right {
+  animation: flip 0.6s ease-out forwards;
+}
+
+.flip-left {
+  animation: flipLeft 0.6s ease-out forwards;
+}
+
+.flip-up {
+  animation: flipUp 0.6s ease-out forwards;
+}
+
+.flip-down {
+  animation: flipDown 0.6s ease-out forwards;
 }
 
 [data-module="countup"] {
