@@ -20,9 +20,11 @@
       rel="stylesheet"
     />
     <!-- Development -->
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./menu.css" />
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/footer.css">
   </head>
 
   <body>
@@ -358,7 +360,7 @@
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-10"></div>
           <div
-            class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+            class="menu-block fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ease-in-out duration-300 animation"
           >
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
@@ -556,18 +558,18 @@
                 class="mb-14 flex flex-col items-center text-center lg:mb-20"
               >
                 <h1
-                  class="slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]"
+                  class="slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] ease-in-out duration-300 animation"
                 >
                   Simplify your SaaS solution with AI
                 </h1>
                 <p
-                  class="slide-from-bottom mb-11 max-w-[715px] text-lg font-semibold sm:text-xl xl:max-w-[980px]"
+                  class="slide-from-bottom mb-11 max-w-[715px] text-lg font-semibold sm:text-xl xl:max-w-[980px] ease-in-out duration-300 animation"
                 >
                   Our AI SAAS tool is a cloud-based software delivery model. It
                   helps businesses forecast demand for products and services and
                   optimize inventory management and supply chain operations.
                 </p>
-                <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex flex-wrap justify-center gap-6 ease-in-out duration-300 animation">
                   <a
                     href="#"
                     class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white"
@@ -584,7 +586,7 @@
               </div>
 
               <!-- Hero Image -->
-              <div class="hero-img overflow-hidden rounded-2xl bg-black">
+              <div class="hero-img overflow-hidden rounded-2xl bg-black ease-in-out duration-300 animation">
                 <img
                   src="../assets/images/hero-dashboard.jpg"
                   alt="hero-dashboard"
@@ -594,14 +596,14 @@
                 />
               </div>
               <hr class="my-10 h-[1px] w-full bg-[#FE330A] lg:my-16 xl:my-20" />
-              <div class="mx-auto mb-12 max-w-[715px] text-center lg:mb-16">
+              <div class="mx-auto mb-12 max-w-[715px] text-center lg:mb-16 ease-in-out duration-300 animation">
                 <p class="text-lg">
                   Companies of all sizes trust us to find AI SaaS critical to
                   their growth and innovation
                 </p>
               </div>
               <!-- Swiper Container -->
-              <div class="swiper brand-slider">
+              <div class="swiper brand-slider ease-in-out duration-300 animatiion">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div
@@ -671,6 +673,104 @@
             ></div>
           </div>
         </section>
+        <!-- End Hero Secion -->
+         <!-- Service Section -->
+          <section class="section-service">
+            <!-- Section Space -->
+            <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px] ">
+              <!-- Section Container -->
+               <div class="container">
+                <!-- Serivce Content -->
+                 <div class="mb-10 lg:mb-16 xl:mb-20 ease-in-out duration-300 animation">
+                  <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px] ">
+                    <h2>Core features that make it valuable</h2>
+                  </div>
+                 </div>
+                 <!-- Service List -->
+                  <ul class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4 ease-in-out duration-300 animation">
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="../assets/images/service/service-icon-black-1.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="../assets/images/service/service-icon-orange-1.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Resource Flexibility
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="../assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="../assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="../assets/images/service/service-icon-black-2.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="../assets/images/service/service-icon-orange-2.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Managed Services
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="../assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="../assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="../assets/images/service/service-icon-black-3.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="../assets/images/service/service-icon-orange-3.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Web-Based Access
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="../assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="../assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="../assets/images/service/service-icon-black-4.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="../assets/images/service/service-icon-orange-4.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Complexity Reduction
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="../assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="../assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                  </ul>
+
+               </div>
+
+            </div>
+          </section>
+
       </div>
     </div>
 
