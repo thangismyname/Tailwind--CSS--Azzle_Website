@@ -228,32 +228,4 @@
     transition: all 0.5s ease;
   }
 
-  .pricing-toggle {
-    display: inline-flex;
-    border: 2px solid #000;
-    border-radius: 50px;
-    padding: 4px;
-    background: #fff;
-}
-
-.price-button {
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    color: #000;
-}
-
-.price-button.active {
-    background: #000;
-    color: #fff;
-}
-
-/* Optional animation for smooth transition */
-.price-button {
-    position: relative;
-    overflow: hidden;
-}
+  
