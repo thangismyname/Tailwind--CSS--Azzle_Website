@@ -274,4 +274,23 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const element = entry.target;
+        const animationClass = element.dataset.animation;
+        if (animationClass) {
+          element.classList.add(animationClass, 'animation');
+        }
+        observer.unobserve(element);
+      }
+    });
+  }, {
+    threshold: 0.1 // Trigger when at least 10% of the element is visible
+  });
+
+  document.querySelectorAll('[data-animation]').forEach(el => observer.observe(el));
+
+  
 });

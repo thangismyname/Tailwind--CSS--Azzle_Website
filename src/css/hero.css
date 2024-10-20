@@ -40,6 +40,48 @@
     opacity: 1;
     background: #FE330A;
   }
+
+  .swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #000;
+    opacity: 0.2;
+  }
+  
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #FE330A;
+  }
   
   .swiper-logo {
     max-width: 100%;
@@ -47,14 +89,9 @@
     object-fit: contain;
   }
   
-  .gradient {
-    filter: blur(55px);
+  .swiper-logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   
-  .bg-orange-1 {
-    background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
-  }
-  
-  .bg-orange-2 {
-    background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
-  }
