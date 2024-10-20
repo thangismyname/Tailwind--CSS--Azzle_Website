@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/faq.css">
   </head>
 
   <body>
@@ -867,6 +868,92 @@
 
         </section>
         <!-- End Content Section  -->
+        <!-- FAQ Section -->
+        <section class="section-faq">
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="container">
+                <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                    <!-- FAQ Left Block -->
+                    <div class="flex flex-col fade-right duration-300 animation">
+                        <!-- Section Content -->
+                        <div class="mb-6">
+                            <div class="mx-auto md:mx-0 md:max-w-none">
+                                <h2>Freely ask us for more information</h2>
+                            </div>
+                        </div>
+                        <!-- Section Content -->
+                        <div class="text-lg leading-[1.4] lg:text-[21px]">
+                            <p class="mb-7 last:mb-0">
+                                Our AI SaaS solutions can be quickly deployed, enabling
+                                users to start benefiting from AI capabilities without
+                                lengthy setup and development times in fast-paced
+                                industries.
+                            </p>
+                            <a class="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white" href="/faq">
+                            Give us a question
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FAQ Right Block -->
+                    <div class="md:ml-10 lg:ml-20 xl:ml-32 fade-left duration-300 animation">
+                      <!-- Q&A List -->
+                      <ul class="qna-list">
+                        <!-- Q&A Item -->
+                        <li class="qna-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                          <div class="qna-question flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px] cursor-pointer">
+                            <p>How do I start AI SaaS?</p>
+                            <div class="qna-icon">
+                              <img src="../assets/images/plus.svg" alt="expand" class="w-6 h-6">
+                            </div>
+                          </div>
+                          <div class="qna-answer text-[#2C2C2C] mt-4 hidden">
+                            <p>
+                              Go to our official website and create an account. You'll need to provide some basic
+                              information and agree to our terms and conditions. Once your account is set up,
+                              you can start exploring our AI SaaS solutions and choose the one that best fits your needs.
+                            </p>
+                          </div>
+                        </li>
+                        <!-- Repeat for other Q&A items -->
+                        <li class="qna-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                          <div class="qna-question flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px] cursor-pointer">
+                            <p>Can I customize AI SaaS solutions?</p>
+                            <div class="qna-icon">
+                              <img src="../assets/images/plus.svg" alt="expand" class="w-6 h-6">
+                            </div>
+                          </div>
+                          <div class="qna-answer text-[#2C2C2C] mt-4 hidden">
+                            <p>
+                              Yes, many of our AI SaaS solutions offer customization options. You can tailor the AI
+                              models to your specific needs, integrate them with your existing systems, and adjust
+                              various parameters to optimize performance for your unique use case.
+                            </p>
+                          </div>
+                        </li>
+                        <li class="qna-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0">
+                          <div class="qna-question flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px] cursor-pointer">
+                            <p>How can AI benefit my business?</p>
+                            <div class="qna-icon">
+                              <img src="../assets/images/plus.svg" alt="expand" class="w-6 h-6">
+                            </div>
+                          </div>
+                          <div class="qna-answer text-[#2C2C2C] mt-4 hidden">
+                            <p>
+                              AI can benefit your business in numerous ways, including automating repetitive tasks,
+                              providing data-driven insights, improving customer service through chatbots, enhancing
+                              decision-making processes, and optimizing operations. The specific benefits will depend
+                              on your industry and the AI solutions you implement.
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!-- End FAQ Section -->
         <!-- Feedback Section -->
         <section class="section-feedback">
           <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
@@ -1033,6 +1120,7 @@
             </div>
           </div>
         </section>
+        <!-- End Feedback Section -->
         <!-- Body Background Shape -->
         <div class="bg-orange-1 gradient absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] rounded-[400px]"></div>
         <div class="bg-orange-2 gradient absolute -left-[100px] top-[64%] -z-[1] h-[360px] w-[360px] -rotate-[-9.022deg] rounded-[360px]"></div>
@@ -1105,28 +1193,28 @@
             <ul class="flex flex-col gap-y-[10px]">
               <li>
                 <a
-                  class="transition-all hover:text-colorOrangyRed"
+                  class="transition-all hover:text-bg-[#FE330A]"
                   href="/about"
                   >About Us</a
                 >
               </li>
               <li>
                 <a
-                  class="transition-all hover:text-colorOrangyRed"
+                  class="transition-all hover:text-bg-[#FE330A]"
                   href="/services"
                   >Services</a
                 >
               </li>
               <li>
                 <a
-                  class="transition-all hover:text-colorOrangyRed"
+                  class="transition-all hover:text-bg-[#FE330A]"
                   href="/pricing"
                   >Pages</a
                 >
               </li>
               <li>
                 <a
-                  class="transition-all hover:text-colorOrangyRed"
+                  class="transition-all hover:text-bg-[#FE330A]"
                   href="/contact"
                   >Contact</a
                 >
@@ -1142,14 +1230,14 @@
             <ul class="flex flex-col gap-y-[10px]">
               <li>
                 <a
-                  class="transition-all hover:text-colorOrangyRed"
+                  class="transition-all hover:text-bg-[#FE330A]"
                   href="/error-404"
                   >404 Not found</a
                 >
               </li>
               <li>
                 <a
-                  class="transition-all hover:text-colorOrangyRed"
+                  class="transition-all hover:text-bg-[#FE330A]"
                   href="/reset-password"
                   >Password Reset</a
                 >
