@@ -292,5 +292,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('[data-animation]').forEach(el => observer.observe(el));
 
+  const qnaItems = document.querySelectorAll('.qna-item');
+  let openItem = null;
+
+  function toggleQnA(item) {
+    const question = item.querySelector('.qna-question');
+    const answer = item.querySelector('.qna-answer');
+    const icon = item.querySelector('.qna-icon img');
+
+    if (openItem && openItem !== item) {
+      // Close the previously open item
+      const openQuestion = openItem.querySelector('.qna-question');
+      const openAnswer = openItem.querySelector('.qna-answer');
+      const openIcon = openItem.querySelector('.qna-icon img');
+
+      openQuestion.classList.remove('active');
+      openAnswer.style.maxHeight = null;
+      openAnswer.classList.add('hidden');
+      openIcon.style.transform = 'rotate(0deg)';
+    }
+
+    // Toggle the clicked item
+    question.classList.toggle('active');
+    if (question.classList.contains('active')) {
+      answer.classList.remove('hidden');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      icon.style.transform = 'rotate(45deg)';
+      openItem = item;
+    } else {
+      answer.style.maxHeight = null;
+      setTimeout(() => answer.classList.add('hidden'), 300); // Add hidden class after transition
+      icon.style.transform = 'rotate(0deg)';
+      openItem = null;
+    }
+  }
+
+  qnaItems.forEach(item => {
+    const question = item.querySelector('.qna-question');
+    question.addEventListener('click', () => toggleQnA(item));
+  });
   
 });
